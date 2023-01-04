@@ -21,7 +21,7 @@ dd {
   margin: 0;
 }
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   position: relative;
 }
 /* Remove list styles on ul, ol elements */
