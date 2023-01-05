@@ -29,16 +29,18 @@ const StyledHamburger = styled.button<{ open: boolean }>`
     border-radius: 10px;
     background-color: ${({ open }) =>
       open ? 'green' : 'purple'};
+    transition: all 0.3s linear;
+    transform-origin: 1px;
 
     :first-child {
-      transform: ${({ open }) => (open ? 'rotatez(-45deg) translate(-9px,5px)' : 'rotatez(0)')};
+        transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
         }
     :nth-child(2) {
-      opacity: ${({ open }) => (open ? '0' : '1')};
-      transform: ${({ open }) => (open ? 'translateX(20px)' : 'translateX(0)')};
+        opacity: ${({ open }) => (open ? "0" : "1")};
+        transform: ${({ open }) => (open ? "translateX(20px)":"translateX(0)")};
         }
     :nth-child(3) {
-      transform: ${({ open }) => (open ? 'translate(-1px, -11px) rotatez(45deg)' : 'rotatez(0)')};
+        transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
         }
   }
 `;

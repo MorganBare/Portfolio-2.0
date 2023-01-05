@@ -12,8 +12,8 @@ export const StyledMobileNav = styled.nav<{ open: boolean }>`
     flex-direction: column;
     display: flex;
     opacity: ${({ open }) => (open ? 1 : 0)};
-    transition: transform 0.3s ease-in-out;
-    transform: ${({ open }) => (open ? "translateX(0)" :"translateX(100%)")};
+    transition: all 0.3s ease-in-out;
+    transform: ${({ open }) => (open ? "translateX(0%)" :"translateX(100%)")};
     @media screen and (min-width: 600px) {
         display: none;
     }
