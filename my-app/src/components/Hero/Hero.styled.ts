@@ -4,9 +4,30 @@ import { ReactComponent as TriangleSVG } from '../../assets/SVG/Triangle-2.0.svg
 
 
 export const HeroContainer = styled.div`
-    width: 500px;
-    height: 500px;
+    width: clamp(320px, 80%, 1200px);
+    height: 90vh;
     margin: 0 auto;
+    padding: 1rem 1rem;
+    position: relative;
+
+    h1 {
+        font-size: ${props => props.theme.fontSize.fs700};
+        color: hsl(${props => props.theme.colors.lightRed});
+        line-height: .5;
+        padding-bottom: 1.5rem;
+        white-space: nowrap;
+    }
+
+    h2 {
+        font-size: ${props => props.theme.fontSize.fs600};
+        color: hsl(${props => props.theme.colors.red})
+    }
+
+    p {
+        font-size: ${props => props.theme.fontSize.fs300};
+        color: white;
+        line-height:1;
+    }
 `;
 
 const FirstTraingleAnimation = keyframes`
@@ -41,9 +62,10 @@ const ThirdTraingleAnimation = keyframes`
 `;
 
 export const StyledTriangle = styled(TriangleSVG)`
-    width: 320px;
+    width: 300px;
     height: 320px;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
 
     #first{
         animation: ${FirstTraingleAnimation} 4s steps(1, end) infinite both;
@@ -55,6 +77,11 @@ export const StyledTriangle = styled(TriangleSVG)`
 
     #third{
         animation:  ${ThirdTraingleAnimation} 4s steps(1, end) infinite both;
+    }
+
+    @media screen and (max-height: 720px) {
+        height: 250px;
+        transform: translate(0, 20%);
     }
 
 `;
