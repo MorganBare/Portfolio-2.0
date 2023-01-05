@@ -23,6 +23,7 @@ dd {
 body {
   font-family: 'Bebas Neue', cursive;
   position: relative;
+  background-color: hsl(240, 5%, 11%);
 }
 /* Remove list styles on ul, ol elements */
 ul,
