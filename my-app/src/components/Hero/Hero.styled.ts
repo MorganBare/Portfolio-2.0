@@ -10,6 +10,10 @@ export const HeroContainer = styled.div`
     padding: 1rem 1rem;
     position: relative;
 
+    @media screen and (min-width: 375px){
+        padding: 0; 
+    }
+
     h1 {
         font-size: ${props => props.theme.fontSize.fs700};
         color: hsl(${props => props.theme.colors.lightRed});
