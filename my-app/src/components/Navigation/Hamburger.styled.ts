@@ -8,7 +8,7 @@ top: 3vw;
 width: 2rem;
 height: 2rem;
 padding: 0;
-background: transparent;
+background: inherit;
 
 display: flex;
 flex-direction: column;

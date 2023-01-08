@@ -1,6 +1,8 @@
-import { useRef } from 'react'
-import { useOnClickOutside } from '../../Hooks';
+import React, { useRef } from 'react'
+import { useOnClickOutside } from '../../Hooks/Hooks';
 import Hamburger from './Hamburger';
+import { useScrollBlock } from '../../Hooks/useScrollBlock';
+
 
 import { 
     StyledMobileNav,
@@ -17,6 +19,10 @@ const MobileNavigation = (props: Props) => {
 
   const node = useRef<HTMLDivElement>(null);
   useOnClickOutside(node, () => props.setOpen(false));
+
+  const [blockScroll, allowScroll] = useScrollBlock();
+
+  props.open ? blockScroll() : allowScroll();
 
   return (
     <div ref={node}>
