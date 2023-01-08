@@ -17,8 +17,8 @@ export const HeroContainer = styled.div`
     h1 {
         font-size: ${props => props.theme.fontSize.fs700};
         color: hsl(${props => props.theme.colors.lightRed});
-        line-height: .5;
-        padding-bottom: 1.5rem;
+        line-height: .6;
+        padding-bottom: 1.6rem;
         white-space: nowrap;
     }
 
@@ -85,10 +85,10 @@ export const StyledTriangle = styled(TriangleSVG)`
         animation:  ${ThirdTraingleAnimation} 4s steps(1, end) infinite both;
     }
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 800px) {
         height: 250px;
         width: 300px;
-        transform: translate(-50%, -40%);
+        transform: translate(-50%, -50%);
     }
 
 `;

@@ -1,5 +1,5 @@
-import React from 'react'
-
+import { useRef } from 'react'
+import { useOnClickOutside } from '../../Hooks';
 import Hamburger from './Hamburger';
 
 import { 
@@ -7,20 +7,26 @@ import {
     StyledLink,
      } from './MobileNavigation.styled';
 
-const MobileNavigation: React.FC = () => {
+export type Props = {
+    open: boolean;
+    setOpen: (v: boolean) => void;
+  };
 
-    const [open, setOpen] = React.useState<boolean>(false);
-    const close = () => setOpen(false);
+
+const MobileNavigation = (props: Props) => {
+
+  const node = useRef<HTMLDivElement>(null);
+  useOnClickOutside(node, () => props.setOpen(false));
 
   return (
-    <>
-        <StyledMobileNav open={open}>
-            <StyledLink onClick={() => close()}>RESUME</StyledLink>
-            <StyledLink onClick={() => close()}>PROJECTS</StyledLink>
-            <StyledLink onClick={() => close()}>CONTACT</StyledLink>
-        </StyledMobileNav>
-        <Hamburger open={open} setOpen={setOpen}/>
-    </>
+    <div ref={node}>
+      <StyledMobileNav open={props.open}>
+          <StyledLink onClick={() => props.setOpen(false)}>RESUME</StyledLink>
+          <StyledLink onClick={() => props.setOpen(false)}>PROJECTS</StyledLink>
+          <StyledLink onClick={() => props.setOpen(false)}>CONTACT</StyledLink>
+      </StyledMobileNav>
+      <Hamburger open={props.open} setOpen={props.setOpen}/>
+    </div>
   )
 }
 
