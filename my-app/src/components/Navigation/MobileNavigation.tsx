@@ -15,9 +15,9 @@ const MobileNavigation: React.FC = () => {
   return (
     <>
         <StyledMobileNav open={open}>
-            <StyledLink onClick={() => close()}>Link 1</StyledLink>
-            <StyledLink onClick={() => close()}>Link 2</StyledLink>
-            <StyledLink onClick={() => close()}>Link 3</StyledLink>
+            <StyledLink onClick={() => close()}>RESUME</StyledLink>
+            <StyledLink onClick={() => close()}>PROJECTS</StyledLink>
+            <StyledLink onClick={() => close()}>CONTACT</StyledLink>
         </StyledMobileNav>
         <Hamburger open={open} setOpen={setOpen}/>
     </>
