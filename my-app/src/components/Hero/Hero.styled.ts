@@ -66,12 +66,12 @@ const ThirdTraingleAnimation = keyframes`
 `;
 
 export const StyledTriangle = styled(TriangleSVG)`
-    width: 300px;
+    width: 320px;
     height: 320px;
     position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
 
     #first{
         animation: ${FirstTraingleAnimation} 4s steps(1, end) infinite both;
@@ -87,6 +87,7 @@ export const StyledTriangle = styled(TriangleSVG)`
 
     @media screen and (max-height: 720px) {
         height: 250px;
+        width: 300px;
         transform: translate(-50%, -40%);
     }
 
