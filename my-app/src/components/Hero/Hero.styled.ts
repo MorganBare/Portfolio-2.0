@@ -6,7 +6,7 @@ import { ReactComponent as TriangleSVG } from '../../assets/SVG/Triangle-2.0.svg
 export const HeroContainer = styled.div`
     width: clamp(320px, 75%, 1200px);
     height: 80vh;
-    margin: 2rem auto 8rem auto;
+    margin: 2rem auto 0 auto;
     padding: 1rem 1rem;
     position: relative;
 
@@ -71,7 +71,7 @@ export const StyledTriangle = styled(TriangleSVG)`
     position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -65%);
 
     #first{
         animation: ${FirstTraingleAnimation} 4s steps(1, end) infinite both;
