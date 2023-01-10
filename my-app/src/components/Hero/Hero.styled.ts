@@ -57,7 +57,10 @@ export const HeroContainer = styled.div`
 
 export const HeroContent = styled.div`
     width: clamp(320px, 80%, 400px);
-    margin-right: 3rem;
+
+    @media screen and (min-width: 375px){
+        margin-right: 2rem;
+    }
 `;
 
 const FirstTraingleAnimation = keyframes`
