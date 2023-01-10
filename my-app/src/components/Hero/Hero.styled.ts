@@ -18,8 +18,17 @@ export const HeroContainer = styled.div`
         padding: 0; 
     }
 
-    @media screen and (min-width: 760px) {
-        width: clamp(600px, 70%, 1100px);
+`;
+
+export const HeroContent = styled.div`
+    width: clamp(320px, 80%, 400px);
+
+    @media screen and (min-width: 375px){
+        margin-right: 2rem;
+    }
+
+    @media screen and (min-width: 600px) {
+        width: clamp(600px, 75%, 1100px);
     }
 
     h1 {
@@ -52,14 +61,6 @@ export const HeroContainer = styled.div`
         @media screen and (min-width: 800px) {
             font-size: ${props => props.theme.fontSize.fs400};
         }
-    }
-`;
-
-export const HeroContent = styled.div`
-    width: clamp(320px, 80%, 400px);
-
-    @media screen and (min-width: 375px){
-        margin-right: 2rem;
     }
 `;
 
