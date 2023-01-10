@@ -98,6 +98,12 @@ export const StyledTriangle = styled(TriangleSVG)`
         animation:  ${ThirdTraingleAnimation} 4s steps(1, end) infinite both;
     }
 
+    @media screen and (max-height: 800px) {
+        transform: translate(-50%, -50%);
+        height: 250px;
+        width: 300px;
+    }
+
     @media screen and (min-width: 560px) {
         transform: translate(-50%, -50%);
     }
