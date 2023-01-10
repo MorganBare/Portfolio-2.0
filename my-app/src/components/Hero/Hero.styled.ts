@@ -11,6 +11,7 @@ export const HeroContainer = styled.div`
     margin-bottom: 10rem;
     padding: 1rem 1rem;
     position: relative;
+    display: block;
 
     @media screen and (min-width: 375px){
         padding: 0; 

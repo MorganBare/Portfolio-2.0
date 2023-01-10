@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-    width: clamp(320px, 70%, 1100px);
+    width: clamp(600px, 70%, 1100px);
     margin: 1rem auto;
     display: flex;
     justify-content: space-between;
