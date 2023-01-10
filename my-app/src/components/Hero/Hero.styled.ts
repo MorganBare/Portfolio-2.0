@@ -4,7 +4,7 @@ import { ReactComponent as TriangleSVG } from '../../assets/SVG/Triangle-2.0.svg
 
 
 export const HeroContainer = styled.div`
-    width: clamp(320px, 65%, 1100px);
+    width: clamp(320px, 80%, 1100px);
     height: 75vh;
     margin-top: 2rem;
     margin-inline: auto;
@@ -14,6 +14,10 @@ export const HeroContainer = styled.div`
 
     @media screen and (min-width: 375px){
         padding: 0; 
+    }
+
+    @media screen and (min-width: 760px) {
+        width: clamp(320px, 73%, 1100px);
     }
 
     h1 {
