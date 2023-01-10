@@ -9,8 +9,8 @@ export const Theme: DefaultTheme = {
         lightRed: "342, 93%, 40%",
     },
     fontSize: {
-        fs700: "clamp(4.5rem, 1.3rem + 15vw, 15rem);",
-        fs600: "clamp(5rem, 2.9259rem + 10.3704vw, 12rem);",
+        fs700: "clamp(4.5rem, 1.3rem + 16vw, 18rem);",
+        fs600: "clamp(5rem, 2.9259rem + 11vw, 14rem);",
         fs500: "clamp(3.8rem, 3.7407rem + 0.2963vw, 4rem);",
         fs400: "clamp(2rem, 1.7037rem + 1.4815vw, 3rem);",
         fs300: "2rem",
