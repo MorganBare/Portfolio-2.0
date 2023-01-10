@@ -4,14 +4,15 @@ import { ReactComponent as TriangleSVG } from '../../assets/SVG/Triangle-2.0.svg
 
 
 export const HeroContainer = styled.div`
-    width: clamp(320px, 80%, 400px);
+    width: 100%;
     height: 75vh;
     margin-top: 2rem;
     margin-inline: auto;
     margin-bottom: 10rem;
-    padding: 1rem 1rem;
+    padding: 1rem;
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
 
     @media screen and (min-width: 375px){
         padding: 0; 
@@ -52,6 +53,10 @@ export const HeroContainer = styled.div`
             font-size: ${props => props.theme.fontSize.fs400};
         }
     }
+`;
+
+export const HeroContent = styled.div`
+    width: clamp(320px, 80%, 400px);
 `;
 
 const FirstTraingleAnimation = keyframes`
