@@ -18,6 +18,10 @@ export const HeroContainer = styled.div`
         padding: 0; 
     }
 
+    @media screen and (min-width: 760px){
+        margin-top: 3rem;
+    }
+
 `;
 
 export const HeroContent = styled.div`
@@ -123,6 +127,19 @@ export const StyledTriangle = styled(TriangleSVG)`
 
     @media screen and (min-width: 560px) {
         transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 952px) {
+        transform: translate(-50%, -40%);
+    }
+
+    @media screen and (min-width: 1100px) {
+        transform: translate(-50%, -35%);
+    }
+
+    @media screen and (min-width: 1700px) {
+        transform: translate(-50%, -18%);
+        height: 280px;
     }
 
 `;
