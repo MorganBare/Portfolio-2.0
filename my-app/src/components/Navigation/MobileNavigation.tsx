@@ -27,7 +27,7 @@ const MobileNavigation = (props: Props) => {
   return (
     <div ref={node}>
       <StyledMobileNav open={props.open}>
-          <StyledLink onClick={() => props.setOpen(false)}>RESUME</StyledLink>
+          <StyledLink onClick={() => props.setOpen(false)} href={require('../../assets/Resume/Morgan_Bare_Resume_2023.pdf')} target = "_blank">RESUME</StyledLink>
           <StyledLink onClick={() => props.setOpen(false)}>PROJECTS</StyledLink>
           <StyledLink onClick={() => props.setOpen(false)}>CONTACT</StyledLink>
       </StyledMobileNav>

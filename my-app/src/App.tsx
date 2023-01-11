@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { Navigation, Hero, ContactFooter, MobileNavigation } from './components';
+import { Navigation, Hero, ContactFooter, MobileNavigation, Projects } from './components';
 import { Theme } from './assets/Styles/Theme';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './assets/Styles/GlobalStyles';
@@ -17,6 +17,7 @@ function App() {
         <Navigation/>
         <MobileNavigation open={open} setOpen={setOpen}/>
         <Hero/>
+        <Projects/>
         <ContactFooter/>
       </ThemeProvider>
   );
