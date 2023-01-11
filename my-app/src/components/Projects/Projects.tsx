@@ -14,6 +14,7 @@ const Projects = () => {
         <ProjectsContainer>
             {ProjectData.map(item => (
                 <SingleProject 
+                key={ProjectData.indexOf(item)}
                 title={item.title}
                 stack={item.stack}
                 liveLink={item.liveLink}
