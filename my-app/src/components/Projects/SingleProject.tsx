@@ -24,8 +24,8 @@ function SingleProject({title, stack, liveLink, github, screenshot}: Props) {
                 <p>{stack}</p>
             </Stack>
             <Links>
-                {liveLink ? <a>{liveLink}</a> : ''}
-                <a>{github}</a>
+                {liveLink ? <a href={liveLink}>Link to Project</a> : ''}
+                <a href={github}>Link to Github</a>
             </Links>
         </SingleProjectContent>
     </SingleProjectContainer>
