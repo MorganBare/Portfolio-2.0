@@ -6,7 +6,7 @@ import { ReactComponent as TriangleSVG } from '../../assets/SVG/Triangle-2.0.svg
 export const HeroContainer = styled.div`
     width: 100%;
     height: 75vh;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-inline: auto;
     margin-bottom: 10rem;
     padding: 1rem;
