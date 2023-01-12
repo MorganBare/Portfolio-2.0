@@ -4,9 +4,9 @@ import { DefaultTheme } from "styled-components";
 export const Theme: DefaultTheme = {
     colors: {
         black: "240, 5%, 11%",
-        gray: "240, 1%, 31%",
+        gray: "225, 4%, 72%",
         red: "348, 53%, 28%",
-        pink: "348, 53%, 28%",
+        pink: "342, 92%, 60%",
         lightRed: "342, 93%, 40%",
     },
     fontSize: {

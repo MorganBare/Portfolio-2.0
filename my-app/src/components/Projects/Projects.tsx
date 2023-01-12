@@ -10,7 +10,6 @@ const Projects = () => {
 
   return (
     <>  
-        <h2>PROJECTS</h2>
         <ProjectsContainer>
             {ProjectData.map(item => (
                 <SingleProject 

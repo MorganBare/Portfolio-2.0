@@ -4,14 +4,14 @@ export const ProjectData: { title: string, stack: Array<string>, liveLink?: stri
         stack: ['REACT', 'STYLED COMPONENTS'],
         liveLink: 'https://designo-mb.netlify.app/',
         github: 'https://github.com/MorganBare/Designo-Multi-Page-Website',
-        screenshot: 'Bitmap.png'
+        screenshot: 'Desktop - Home.jpg'
     },
     {
         title: 'Kanban Task Management',
         stack: ['REACT', 'REDUX', 'MONGODB', 'STYLED COMPONENTS'],
         liveLink: 'https://designo-mb.netlify.app/',
         github: 'https://github.com/MorganBare/Designo-Multi-Page-Website',
-        screenshot: 'Bitmap.png'
+        screenshot: 'kanban.jpg'
     },
     {
         title: 'Advice Generator',
@@ -44,7 +44,7 @@ export const ProjectData: { title: string, stack: Array<string>, liveLink?: stri
         stack: ['JAVASCRIPT', 'HTML/CSS'],
         liveLink: 'https://elegant-morse-5cd661.netlify.app/',
         github: 'https://github.com/MorganBare/Art-gallery-website',
-        screenshot: 'Bitmap.png'
+        screenshot: 'art.png'
     },
     {
         title: 'Portfolio 1.0',

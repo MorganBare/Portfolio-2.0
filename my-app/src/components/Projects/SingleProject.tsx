@@ -15,17 +15,21 @@ type Props = {
     };
 
 function SingleProject({title, stack, liveLink, github, screenshot}: Props) {
+
+    const stackItems = stack.map(item => <span>{item}</span>)
+    console.log(stackItems)
+
   return (
     <SingleProjectContainer>
         <img src={require(`../../assets/Screenshots/${screenshot}`)} alt='project screenshot'/>
         <SingleProjectContent>
             <h3>{title}</h3>
             <Stack>
-                <p>{stack}</p>
+                {stackItems}
             </Stack>
             <Links>
-                {liveLink ? <a href={liveLink}>Link to Project</a> : ''}
-                <a href={github}>Link to Github</a>
+                <a href={github}>View Code</a>
+                {liveLink ? <a href={liveLink}>View Project</a> : ''}
             </Links>
         </SingleProjectContent>
     </SingleProjectContainer>
