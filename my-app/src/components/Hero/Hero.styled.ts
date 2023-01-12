@@ -28,6 +28,7 @@ export const HeroContent = styled.div`
     width: clamp(320px, 80%, 400px);
 
     @media screen and (min-width: 375px){
+        margin-right: 2rem;
     }
 
     @media screen and (min-width: 600px) {
