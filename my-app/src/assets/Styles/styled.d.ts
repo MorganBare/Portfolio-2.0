@@ -13,7 +13,9 @@ declare module 'styled-components' {
 
     fontSize: {
         fs700: string,
+        fs650: string,
         fs600: string,
+        fs550: string,
         fs500: string,
         fs400: string,
         fs300: string,

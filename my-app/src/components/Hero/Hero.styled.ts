@@ -28,7 +28,6 @@ export const HeroContent = styled.div`
     width: clamp(320px, 80%, 400px);
 
     @media screen and (min-width: 375px){
-        margin-right: 2rem;
     }
 
     @media screen and (min-width: 600px) {
@@ -36,7 +35,7 @@ export const HeroContent = styled.div`
     }
 
     h1 {
-        font-size: ${props => props.theme.fontSize.fs700};
+        font-size: ${props => props.theme.fontSize.fs650};
         color: hsl(${props => props.theme.colors.lightRed});
         line-height: .6;
         padding-bottom: 1.6rem;
@@ -49,7 +48,7 @@ export const HeroContent = styled.div`
     }
 
     h2 {
-        font-size: ${props => props.theme.fontSize.fs600};
+        font-size: ${props => props.theme.fontSize.fs550};
         color: hsl(${props => props.theme.colors.red});
 
         @media screen and (min-width: 600px) {
