@@ -42,6 +42,10 @@ export const HeroContent = styled.div`
         padding-bottom: 1.6rem;
         white-space: nowrap;
 
+        @media screen and (min-width: 500px) {
+            font-size: ${props => props.theme.fontSize.fs700};
+        }
+
         @media screen and (min-width: 600px) {
             line-height: .8;
             padding-bottom: .5rem;
@@ -51,6 +55,10 @@ export const HeroContent = styled.div`
     h2 {
         font-size: ${props => props.theme.fontSize.fs550};
         color: hsl(${props => props.theme.colors.red});
+
+        @media screen and (min-width: 500px) {
+            font-size: ${props => props.theme.fontSize.fs600};
+        }
 
         @media screen and (min-width: 600px) {
             line-height: 1;
