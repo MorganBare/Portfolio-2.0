@@ -44,7 +44,7 @@ export const ProjectData: { title: string, stack: Array<string>, liveLink?: stri
         stack: ['JAVASCRIPT', 'HTML/CSS'],
         liveLink: 'https://elegant-morse-5cd661.netlify.app/',
         github: 'https://github.com/MorganBare/Art-gallery-website',
-        screenshot: 'art2.png'
+        screenshot: 'art.png'
     },
     {
         title: 'This Portfolio',

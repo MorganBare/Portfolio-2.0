@@ -14,6 +14,7 @@ export const Nav = styled.nav`
 export const NavLink = styled.a`
     font-size: ${props => props.theme.fontSize.fs200};
     color: white;
+    text-decoration: none;
 
     :hover{
         cursor: pointer;
