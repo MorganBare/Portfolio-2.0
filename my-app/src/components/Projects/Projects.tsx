@@ -8,12 +8,13 @@ import SingleProject from './SingleProject'
 
 const Projects = () => {
 
+
   return (
-    <>  
         <ProjectsContainer>
             {ProjectData.map(item => (
-                <SingleProject 
-                key={ProjectData.indexOf(item)}
+                <SingleProject
+                key={item.id} 
+                id={item.id}
                 title={item.title}
                 stack={item.stack}
                 liveLink={item.liveLink}
@@ -21,7 +22,6 @@ const Projects = () => {
                 screenshot={item.screenshot}/>
             ))}
         </ProjectsContainer>
-    </>
   )
 }
 

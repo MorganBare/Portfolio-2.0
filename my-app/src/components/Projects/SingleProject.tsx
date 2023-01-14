@@ -7,6 +7,7 @@ import {
     Links} from './Projects.styled'
 
 type Props = {
+    id: number;
     title: string;
     stack: Array<string>;
     liveLink?: string;
@@ -14,13 +15,13 @@ type Props = {
     screenshot: string;
     };
 
-function SingleProject({title, stack, liveLink, github, screenshot}: Props) {
+function SingleProject({ id, title, stack, liveLink, github, screenshot}: Props) {
 
-    const stackItems = stack.map(item => <span>{item}</span>)
-    console.log(stackItems)
+    let keyStartNumber = stack.length;
+    const stackItems = stack.map(item => <span key={keyStartNumber += 1}>{item}</span>)
 
   return (
-    <SingleProjectContainer>
+    <SingleProjectContainer key={id}>
         <img src={require(`../../assets/Screenshots/${screenshot}`)} alt='project screenshot'/>
         <SingleProjectContent>
             <h3>{title}</h3>
