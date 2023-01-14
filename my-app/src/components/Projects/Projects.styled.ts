@@ -4,12 +4,17 @@ export const ProjectsContainer = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
-    grid-row-gap: 2rem;
+    grid-row-gap: 3rem;
     grid-column-gap: 1rem;
     justify-items: center;
     color: white;
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0 1rem;
+
+    @media screen and (min-width: 850px) {
+        padding: 0;
+    }
 `;
 
 export const SingleProjectContainer = styled.div`

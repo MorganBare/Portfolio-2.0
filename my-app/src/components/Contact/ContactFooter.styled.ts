@@ -6,7 +6,7 @@ import { ReactComponent as Linkedin } from '../../assets/SVG/SocialMedia/linkedi
 
 export const ContactContainer = styled.div`
     width: clamp(320px, 75%, 1100px);
-    margin: 6rem auto;
+    margin: 7rem auto 5rem auto;
     text-align: center;
     color: white;
     letter-spacing: 1px;
