@@ -7,6 +7,7 @@ import { useScrollBlock } from '../../Hooks/useScrollBlock';
 import { 
     StyledMobileNav,
     StyledLink,
+    HashLinkStyled
      } from './MobileNavigation.styled';
 
 export type Props = {
@@ -28,8 +29,8 @@ const MobileNavigation = (props: Props) => {
     <div ref={node}>
       <StyledMobileNav open={props.open}>
           <StyledLink onClick={() => props.setOpen(false)} href={require('../../assets/Resume/Morgan_Bare_Resume_2023.pdf')} target = "_blank">RESUME</StyledLink>
-          <StyledLink onClick={() => props.setOpen(false)}>PROJECTS</StyledLink>
-          <StyledLink onClick={() => props.setOpen(false)}>CONTACT</StyledLink>
+          <HashLinkStyled to="/#Projects" onClick={() => props.setOpen(false)}>PROJECTS</HashLinkStyled>
+          <HashLinkStyled to="/#Contact" onClick={() => props.setOpen(false)}>CONTACT</HashLinkStyled>
       </StyledMobileNav>
       <Hamburger open={props.open} setOpen={props.setOpen}/>
     </div>

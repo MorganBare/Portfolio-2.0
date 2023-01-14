@@ -10,7 +10,7 @@ const Projects = () => {
 
 
   return (
-        <ProjectsContainer>
+        <ProjectsContainer id='Projects'>
             {ProjectData.map(item => (
                 <SingleProject
                 key={item.id} 

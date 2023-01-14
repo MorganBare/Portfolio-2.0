@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { HashLink } from 'react-router-hash-link';
+
 export const StyledMobileNav = styled.nav<{ open: boolean }>`
     top: 0;
     right: 0;
@@ -20,6 +22,18 @@ export const StyledMobileNav = styled.nav<{ open: boolean }>`
 `;
 
 export const StyledLink = styled.a`
+  padding: 0 2rem;
+  font-size: ${props => props.theme.fontSize.fs300};
+  color: white;
+  text-decoration: none;
+  
+  :hover {
+    color: hsl(${props => props.theme.colors.lightRed});
+    cursor: pointer;
+  }
+`;
+
+export const HashLinkStyled = styled(HashLink)`
   padding: 0 2rem;
   font-size: ${props => props.theme.fontSize.fs300};
   color: white;

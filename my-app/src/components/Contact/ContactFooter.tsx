@@ -10,7 +10,7 @@ import {
 
 const ContactFooter: React.FC = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="Contact">
       <h3>CONTACT ME</h3>
       <Email href = "mailto: morganjbare@gmail.com">MORGANJBARE@GMAIL.COM</Email>
       <SocialMedia>

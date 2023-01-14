@@ -6,6 +6,7 @@ import { Theme } from './assets/Styles/Theme';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './assets/Styles/GlobalStyles';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
