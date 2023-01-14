@@ -5,7 +5,7 @@ export const ProjectData: { id: number, title: string, stack: Array<string>, liv
         stack: ['REACT', 'STYLED COMPONENTS'],
         liveLink: 'https://designo-mb.netlify.app/',
         github: 'https://github.com/MorganBare/Designo-Multi-Page-Website',
-        screenshot: 'Desktop - Home.jpg'
+        screenshot: 'Designo.png'
     },
     {   
         id: 1,
