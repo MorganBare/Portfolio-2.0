@@ -8,7 +8,7 @@ top: 3vw;
 width: 2rem;
 height: 2rem;
 padding: 0;
-background: inherit;
+background: ${({ open }) => (open ? "black" : "hsl(240, 5%, 11%)")};
 
 display: flex;
 flex-direction: column;
