@@ -22,7 +22,7 @@ dd {
   margin: 0;
 }
 body {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', sans-serif;
   position: relative;
   background-color: hsl(240, 5%, 11%);
 }
