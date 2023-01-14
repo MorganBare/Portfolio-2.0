@@ -57,7 +57,6 @@ export const ProjectData: { id: number, title: string, stack: Array<string>, liv
         id: 7,
         title: 'This Portfolio',
         stack: ['TYPESCRIPT', 'REACT', 'STYLED COMPONENTS'],
-        liveLink: 'https://elegant-morse-5cd661.netlify.app/',
         github: 'https://github.com/MorganBare/Portfolio-2.0',
         screenshot: 'portfolio2.png'
     },
@@ -65,7 +64,7 @@ export const ProjectData: { id: number, title: string, stack: Array<string>, liv
         id: 8,
         title: 'Portfolio 1.0',
         stack: ['JAVASCRIPT', 'HTML/CSS'],
-        liveLink: 'https://elegant-morse-5cd661.netlify.app/',
+        liveLink: 'https://stellar-cascaron-55093f.netlify.app/',
         github: 'https://github.com/MorganBare/Portfolio',
         screenshot: 'portfolio.png'
     },
